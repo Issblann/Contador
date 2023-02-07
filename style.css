@@ -37,6 +37,9 @@ body {
 .buttons {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn {
@@ -50,6 +53,12 @@ body {
 }
 .btn__reset {
   width: 120px;
+}
+
+@media (max-width: 499px) {
+  .btn__reset {
+    width: 150px;
+  }
 }
 .btn:hover {
   background: var(--btn-hover);
